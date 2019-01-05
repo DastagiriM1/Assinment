@@ -1,3 +1,4 @@
+// Assinment
 import { Component, ElementRef,
   AfterViewInit,
   OnDestroy,
