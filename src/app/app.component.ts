@@ -30,10 +30,9 @@ export class AppComponent {
     months: string[] = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     toolTipCustomFormatFn: any = (value: any, itemIndex: any, serie: any, group: any, categoryValue: any, categoryAxis: any): any => {
         let dataItem = this.dataAdapter.records[itemIndex];
-        return '<DIV style="text-align:left"><b>Date: ' +
+        return '<DIV style="text-align:left"><b>selling : ' +
             categoryValue.getDate() + '-' + this.months[categoryValue.getMonth()] + '-' + categoryValue.getFullYear() +
-            '</b><br />Open price: $' + dataItem.Open +
-            '</b><br />Close price: $' + dataItem.Close +
+            '</b><br />purchase : $' + dataItem.Open +
             '</b><br />Daily volume: ' + dataItem.Volume +
             '</DIV>';
     };
@@ -79,7 +78,7 @@ export class AppComponent {
             type: 'line',
             toolTipFormatFunction: this.toolTipCustomFormatFn,
             series: [
-                { dataField: 'Close', displayText: 'Close Price', lineWidth: 1, lineWidthSelected: 1 }
+                { dataField: 'Close', displayText: 'purchase ', lineWidth: 1, lineWidthSelected: 1 }
             ]
         }
     ];
