@@ -41,8 +41,8 @@ export class AppComponent {
     xAxis: any =
     {
         dataField: 'Date',
-        minValue: new Date(2012, 0, 1),
-        maxValue: new Date(2013, 11, 31),
+        minValue: new Date(2018, 10, 1),
+        maxValue: new Date(2019, 1, 9),
         type: 'date',
         baseUnit: 'day',
         labels:
