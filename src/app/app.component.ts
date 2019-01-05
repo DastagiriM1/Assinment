@@ -1,10 +1,9 @@
-// Assinment
 import { Component, ElementRef,
   AfterViewInit,
   OnDestroy,
   ViewChild } from '@angular/core';
-import { chart } from 'highcharts';
-import * as Highcharts from 'highcharts';
+//import { chart } from 'highcharts';
+//import * as Highcharts from 'highcharts';
 
 @Component({
   selector: 'app-root',
@@ -81,7 +80,7 @@ export class AppComponent implements OnDestroy, AfterViewInit {
             renderTo: this.chartEl.nativeElement
         };
 
-        this._chart = new Highcharts.Chart(opts);
+        //this._chart = new Highcharts.Chart(opts);
     }
   }
 
